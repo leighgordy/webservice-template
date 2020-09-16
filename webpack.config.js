@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/server.js',
   target: 'node',
   output: {
     filename: 'main.js',

@@ -2,7 +2,7 @@
   "name": "webservice-template",
   "version": "1.0.0",
   "description": "A simple template for future web services",
-  "main": "index.js",
+  "main": "arc/app.js",
   "scripts": {
     "serve": "node dist/main.js",
     "build": "npx webpack --mode production",
