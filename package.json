@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/leighgordy/webservice-template/issues"
   },
-  "homepage": "https://github.com/leighgordy/webservice-template#readme"
+  "homepage": "https://github.com/leighgordy/webservice-template#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
 }
