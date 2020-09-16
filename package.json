@@ -21,7 +21,15 @@
   },
   "homepage": "https://github.com/leighgordy/webservice-template#readme",
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-async-to-generator": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "babel-loader": "^8.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "koa": "^2.13.0"
   }
 }
