@@ -32,6 +32,9 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "koa": "^2.13.0"
+    "koa": "^2.13.0",
+    "koa-combine-routers": "^4.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^9.4.0"
   }
 }
