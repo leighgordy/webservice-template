@@ -1,7 +1,8 @@
 import Router from 'koa-router';
+import config from '../config';
 const router = new Router()
 
-router.get('/webservice-template/v1/ping', async (ctx, next) => {
+router.get(`${config.url}/ping`, async (ctx, next) => {
   ctx.body = {
     name: 'webservice-template',
     status: 'alive',
