@@ -4,6 +4,8 @@
   "description": "A simple template for future web services",
   "main": "index.js",
   "scripts": {
+    "serve": "node dist/main.js",
+    "build": "npx webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
