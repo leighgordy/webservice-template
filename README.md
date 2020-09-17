@@ -1,7 +1,7 @@
 # webservice-template
 A basic web service template for use in my future projects. Might be pants though as its my first JS webservice
 
-##Commands
+## Commands
 `npm run build` - Build the application using webpack  
 `npm run serve` - Serve the webservice on port 3000  
 `npm run test`- Run jest tests once  
@@ -9,7 +9,7 @@ A basic web service template for use in my future projects. Might be pants thoug
 `npm run lint`- Run Eslint with AirBnB base rules  
 `npm run coverage`- Run Jest coverage  
 
-##Docker Commands
+## Docker Commands
 `sudo docker build -t webservice-template .` -  Build docker image  
 `sudo docker run -p 3000:3000 webservice-template` -  run docker image  
 `sudo docker ps` -  list docker instances  
