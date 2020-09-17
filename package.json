@@ -7,7 +7,9 @@
     "serve": "node dist/main.js",
     "build": "npx webpack --mode production",
     "test": "jest",
-    "lint": "npx eslint"
+    "testWatch": "jest --watch",
+    "lint": "npx eslint",
+    "coverage": "npx jest --coverage"
   },
   "repository": {
     "type": "git",

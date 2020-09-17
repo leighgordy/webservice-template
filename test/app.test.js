@@ -7,14 +7,12 @@ const app = new Koa();
 
 app.use(router());
 
-test('ping test', async () => {
-  const response = await request(app.callback()).get('/webservice-template/v1/ping');
-  expect(response.status).toBe(200);
-  expect(JSON.parse(response.text)).toStrictEqual({ name: 'webservice-template', status: 'alive' });
-});
+const hitEndpoint = async (url, status) => {
+  const response = await request(app.callback()).get(url);
+  expect(response.status).toBe(status);
+};
 
-test('root test', async () => {
-  const response = await request(app.callback()).get('/webservice-template/v1/');
-  expect(response.status).toBe(200);
-  expect(JSON.parse(response.text)).toStrictEqual({ message: 'Im just a webservice-template'});
+describe('Test each route functions when bundled together', () => {
+  test('ping test', async () => hitEndpoint('/webservice-template/v1/ping', 200));
+  test('root test', async () => hitEndpoint('/webservice-template/v1/', 200));
 });
