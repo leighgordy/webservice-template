@@ -4,5 +4,5 @@ COPY package.json /app
 RUN npm install
 COPY . /app
 CMD npm run build
-CMD node dist/main.js
+CMD node dist/server.js
 EXPOSE 3000

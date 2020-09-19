@@ -14,6 +14,3 @@ A basic web service template for use in my future projects. Might be pants thoug
 `sudo docker run -p 3000:3000 webservice-template` -  run docker image  
 `sudo docker ps` -  list docker instances  
 `sudo docker stop {CONTAINER ID}` - stop docker instance. CONTAINER ID found in docker ps  
-
-## Why are you using webpack ?!?!?
-Normally I would not, its definitely overkill for solely a backend service. However, I plan to use this as part of a full stack application, and the frontend will certianly use webpack. I'm just trying to keep the configuration consistent across all my projects. 
