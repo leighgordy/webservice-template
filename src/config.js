@@ -1,8 +1,12 @@
 const config = {
   appName: 'webservice-template',
-  version: 'v1',
+  version: 1,
+  aws: {
+    region: 'us-west-2',
+    endpoint: 'http://localhost:8000',
+  },
 };
 
-config.url = `/${config.appName}/${config.version}`;
+config.url = `/${config.appName}/v${config.version}`;
 
 export default config;

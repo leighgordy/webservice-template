@@ -15,7 +15,7 @@ A basic web service template for use in my future projects. Might be pants thoug
 `sudo docker run -p 3000:3000 webservice-template` -  run docker image  
 `sudo docker ps` -  list docker instances  
 `sudo docker stop {CONTAINER ID}` - stop docker instance. CONTAINER ID found in docker ps  
-`sudo docker images rm` -   List docker images.  
+`sudo docker images` -   List docker images.  
 `sudo docker image rm {CONTAINER ID}` -   remove docker image. 
 
 ### Docker Compose Commands
@@ -23,7 +23,7 @@ A basic web service template for use in my future projects. Might be pants thoug
 `sudo docker-compose rm` - Remove docker compose
 
 ### AWS Commands
-`aws dynamodb list-tables --endpoint-url http://localhost:8000` - List Tables
+`aws dynamodb list-tables --endpoint-url http://localhost:8000 --region us-west-2` - List Tables
 
 ## Useful Links
 ###Docker

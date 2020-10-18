@@ -1,21 +1,21 @@
 version: "3.8"
 services:
-  webapp:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-      args:
-        buildno: 1
-    ports:
-      - "3000:3000"
-    depends_on:
-      - "dynamodb-local"
-    links:
-      - "dynamodb-local"
-    environment:
-      - AWS_ACCESS_KEY_ID='DUMMYIDEXAMPLE'
-      - AWS_SECRET_ACCESS_KEY='DUMMYEXAMPLEKEY'
-      - REGION='eu-west-1'
+  #webapp:
+  #  build:
+  #    context: ./
+  #    dockerfile: Dockerfile
+  #    args:
+  #      buildno: 1
+  #  ports:
+  #    - "3000:3000"
+  #  depends_on:
+  #    - "dynamodb-local"
+  #  links:
+  #    - "dynamodb-local"
+  #  environment:
+  #    - AWS_ACCESS_KEY_ID='DUMMYIDEXAMPLE'
+  #    - AWS_SECRET_ACCESS_KEY='DUMMYEXAMPLEKEY'
+  #    - REGION='eu-west-1'
   dynamodb-local:
     image: amazon/dynamodb-local:latest
     container_name: dynamodb-local

@@ -4,7 +4,11 @@ describe('Test Initialisation', () => {
   test('adds 1 + 2 to equal 3', () => {
     expect(config).toStrictEqual({
       appName: 'webservice-template',
-      version: 'v1',
+      aws: {
+        endpoint: 'http://localhost:8000',
+        region: 'us-west-2',
+      },
+      version: 1,
       url: '/webservice-template/v1',
     });
   });
