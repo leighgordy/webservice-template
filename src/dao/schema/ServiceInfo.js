@@ -1,5 +1,5 @@
 export default {
-  TableName: 'ServiceInfoServiceInfo',
+  TableName: 'ServiceInfo',
   KeySchema: [
     { AttributeName: 'version', KeyType: 'HASH' },
     { AttributeName: 'service', KeyType: 'RANGE' },
