@@ -1,6 +1,20 @@
 # webservice-template
 A basic web service template for use in my future projects. Might be pants though as its my first JS webservice
 
+## Local Setup
+Install the following libraries on your target OS.
+* [Docker](https://docs.docker.com/engine/install/)
+* [DockerCompose](https://docs.docker.com/compose/install/)
+* [Node](https://nodejs.org/en/download/)
+* [Amazon CLI](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.CLI.html#Tools.CLI.DownloadingAndRunning)
+
+Open two separate terminals. Within terminal one call ``sudo docker-compose up``. Within terminal two call ``npm run serve``. This will setup will allow you to edit the webservice live.
+
+_You can also uncomment the code within docker-compose.yml it you want to run the production version of the app._ You don't need to call ``npm run serve`` if you do that.
+
+Once running within your browser call one of the following endpoints
+* [http://localhost:3000/webservice-template/v1/](http://localhost:3000/webservice-template/v1/)
+* [http://localhost:3000/webservice-template/v1/ping](http://localhost:3000/webservice-template/v1/ping)
 ## Commands
 ### JS Commands
 `npm run build` - Build the application using webpack  
@@ -8,7 +22,7 @@ A basic web service template for use in my future projects. Might be pants thoug
 `npm run test`- Run jest tests once  
 `npm run testWatch`- Run jest tests in watch mode  
 `npm run lint`- Run Eslint with AirBnB base rules  
-`npm run coverage`- Run Jest coverage  
+`npm run coverage`- Run jest coverage  
 
 ### Docker Commands
 `sudo docker build -t webservice-template .` -  Build docker image  
