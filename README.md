@@ -26,10 +26,10 @@ A basic web service template for use in my future projects. Might be pants thoug
 `aws dynamodb list-tables --endpoint-url http://localhost:8000 --region us-west-2` - List Tables
 
 ## Useful Links
-###Docker
+### Docker
 * [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
 * [Docker Compose Instructions](https://docs.docker.com/compose/)
-###AWS
+### AWS
 * [Install instructions for Amazon CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html)
 * [Amazon CLI Usage Instructions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.CLI.html#Tools.CLI.DownloadingAndRunning)
 * [Amazon DynamoDB JS Instructions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.JavaScript.html)
