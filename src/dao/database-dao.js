@@ -3,7 +3,6 @@ import { dynamodb, documentClient } from './dynamodb';
 const dynamodbPromiseHandler = (resolve, reject, err, data) => {
   if (err) reject(err);
   resolve({ ...data });
-  return false;
 };
 
 const listTables = async () => new Promise((resolve, reject) => {
