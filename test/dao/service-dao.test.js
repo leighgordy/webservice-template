@@ -69,16 +69,14 @@ describe('service-dao-test', () => {
 
     test('Error on table creation', async (done) => {
       const mockErr = jest.fn();
-      tableExists.mockResolvedValue(true);
+      tableExists.mockResolvedValue(false);
       createTable.mockRejectedValue(mockErr);
       try {
         await initializeService();
         done.fail();
       } catch (error) {
         expect(tableExists).toHaveBeenCalledWith('ServiceInfo');
-        // TODO: Fix Bluebird/Jest compatibility issue, bluebird  generates its own error
-        // when mockRejectedValue is called
-        // expect(error).toBe(mockErr);
+        expect(error).toBe(mockErr);
         done();
       }
     });
@@ -91,9 +89,7 @@ describe('service-dao-test', () => {
         await initializeService();
         done.fail();
       } catch (error) {
-        // TODO: Fix Bluebird/Jest compatibility issue, bluebird  generates its own error
-        // when mockRejectedValue is called
-        // expect(error).toBe(mockErr);
+        expect(error).toBe(mockErr);
         expect(tableExists).toHaveBeenCalledWith('ServiceInfo');
         expect(createTable).not.toHaveBeenCalled();
         done();

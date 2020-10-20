@@ -5,13 +5,19 @@ const dynamodbPromiseHandler = (resolve, reject, err, data) => {
   resolve({ ...data });
 };
 
-const listTables = async () => new Promise((resolve, reject) => {
-  dynamodb.listTables({}, (err, data) => dynamodbPromiseHandler(resolve, reject, err, data));
-});
+const listTables = async () => {
+  const result = await new Promise((resolve, reject) => {
+    dynamodb.listTables({}, (err, data) => dynamodbPromiseHandler(resolve, reject, err, data));
+  });
+  return result;
+};
 
-const createTable = async (params) => new Promise((resolve, reject) => {
-  dynamodb.createTable(params, (err, data) => dynamodbPromiseHandler(resolve, reject, err, data));
-});
+const createTable = async (params) => {
+  const result = await new Promise((resolve, reject) => {
+    dynamodb.createTable(params, (err, data) => dynamodbPromiseHandler(resolve, reject, err, data));
+  });
+  return result;
+};
 
 const tableExists = async (tableName) => {
   const tables = await listTables();
@@ -23,9 +29,10 @@ const putItem = async (TableName, Item) => {
     TableName,
     Item,
   };
-  return new Promise((resolve, reject) => {
+  const result = await new Promise((resolve, reject) => {
     documentClient.put(params, (err, data) => dynamodbPromiseHandler(resolve, reject, err, data));
   });
+  return result;
 };
 
 const getItem = async (TableName, Key) => {
@@ -33,9 +40,10 @@ const getItem = async (TableName, Key) => {
     TableName,
     Key,
   };
-  return new Promise((resolve, reject) => {
+  const result = await new Promise((resolve, reject) => {
     documentClient.get(params, (err, data) => dynamodbPromiseHandler(resolve, reject, err, data));
   });
+  return result;
 };
 
 export {
