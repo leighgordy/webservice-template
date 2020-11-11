@@ -47,4 +47,4 @@ Once running within your browser call one of the following endpoints
 * [Install instructions for Amazon CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html)
 * [Amazon CLI Usage Instructions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.CLI.html#Tools.CLI.DownloadingAndRunning)
 * [Amazon DynamoDB JS Instructions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.JavaScript.html)
-
+* Didn't realise there was a promise based library in AWS (Too many docs!), need to refactor!
