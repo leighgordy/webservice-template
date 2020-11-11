@@ -47,4 +47,8 @@ Once running within your browser call one of the following endpoints
 * [Install instructions for Amazon CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html)
 * [Amazon CLI Usage Instructions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.CLI.html#Tools.CLI.DownloadingAndRunning)
 * [Amazon DynamoDB JS Instructions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.JavaScript.html)
-* Didn't realise there was a promise based library in AWS (Too many docs!), need to refactor!
+
+## Issues
+* **This is my first attempt at a JS AWS service!** There will be some newbie mistakes. I'll list them here for clarity! I'll strike them off as I fix.
+    * ~~didn't realise there was a AWS promise library, so i wrote my~~
+    * Database DAO should only contain extra methods and direct access to dynamodb clients. Most methods are redundant. Still writing like im using hibernate! 
