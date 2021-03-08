@@ -1,5 +1,5 @@
 # webservice-template
-A basic web service template for use in my future projects. Might be pants though as its my first JS webservice
+A basic web service template for use in my future projects.
 
 ## Local Setup
 Install the following libraries on your target OS.
